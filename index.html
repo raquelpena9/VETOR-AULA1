@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projeto HTML e CSS</title>
+  <style>
+    body {
+      background-image: url(bebedançantedefralda.gif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 80px;
+    }
+   
+    .container {
+    background-color: #f2f2f2;
+    display: inline-block;
+      margin: 20px auto;
+      padding: 50px;
+      width: 400px;
+      text-align: center;
+      height: 500px;
+    }
+   
+    h1 {
+      color: #333333;
+      font-size: 24px;
+          margin-bottom: 20px;
+            }
+   
+    p {
+      color: #666666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+   
+ 
+     nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    .bebe{
+      width: 300px;
+    }
+    footer {
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="container">
+    <main>
+    <nav>
+       <ul class="menuhorizontal"></ul>
+        <li><a href="pagina1.html">Pampers</a></li>
+        <li><a href="pagina2.html">Huggies</a></li>
+        <li><a href="pagina3.html">Babysec</a></li>
+      </ul>
+    </nav>
+    </main>
+    <h1>Bem-vindo(a) a Minha Página de Fraldas</h1>
+    <br><br>
+    <img class="bebe" src="bebesegurandofralda.jpg">
+       <br><br>
+    <br><br>  
+    
+    <p>Nas próximas páginas você verá os tipos de Fraldas da Nossa Loja</p>
+    </div>
+
+    <h1>Digite seu CPF para se cadastrar em promoções:</h1>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" placeholder="CPF" autocomplete="off" maxlength="11" onkeyup="mascara_cpf()"">
+
+    <script>
+        function validarNumero() {
+        //Obter o valor do campo de número 
+        let numeroValue = document.getElementById ("numero"). value;
+
+        //Verificar se o campo está vazio ou não é um número 
+        if (numeroValue.trim() === '' || isNaN(numeroValue)) {
+            alert ("Por favor, digite um número válido.");
+        }else {
+            alert ("mú,mero válido:" + numeroValue);
+        }
+        }
+           // Aplicar a máscara de CPF no campo de entrada
+        Inputmask().mask(document.getElementById("cpf"), "999.999.999-99");
+    </script>
+      
+  </body>
+  <footer>
+    <br><br>
+    <p> Clique para ouvir a música junto com o bebe Crazy!</p>
+    <audio controls autoplay loop>  
+      <source src="Crazy-Frog-Axel-F.mp3" type="audio/mpeg">
+    </audio>
+    <p>&copy;2023 My Website. Super fofinho</p></p:>
+      </footer>
+
+      </html>
